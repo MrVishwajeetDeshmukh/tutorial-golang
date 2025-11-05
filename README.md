@@ -56,4 +56,4 @@ Each chapter is organized into its own directory and includes various examples r
 Use Git to clone this repository locally:
 
 ```bash
-git clone https://github.com/KennethanCeyer/tutorial-golang.git
+git clone https://github.com/MrVishwajeetDeshmukh/tutorial-golang.git
