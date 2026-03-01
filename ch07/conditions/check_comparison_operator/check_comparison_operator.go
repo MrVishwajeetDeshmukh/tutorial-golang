@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	// Define a string variable containing the word "사과" (Korean for "apple")
-	korWord := "사과"
+	// Create a string variable that stores the Spanish word "manzana" (which means "apple")
+	spanishWord := "manzana"
 
-	// Compare the variable with the literal string "사과"
-	// The comparison returns true because both strings are identical.
-	fmt.Printf("korWord == \"%v\" = %v\n", korWord, korWord == "사과")
+	// Check if the variable value is equal to the string "manzana"
+	// This will print true because both values are the same.
+	fmt.Printf("spanishWord == \"%v\" = %v\n", spanishWord, spanishWord == "manzana")
 }

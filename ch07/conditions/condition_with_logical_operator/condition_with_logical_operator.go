@@ -6,8 +6,8 @@ import "fmt"
 // then returns the translated version.
 // Supported languages:
 //   en = English (no change)
-//   ko = Korean
-//   jp = Japanese
+//   es = Spanish
+//   fr = French
 // If no match is found, it returns a fallback message.
 func getTranslatedWord(
 	engWord string,
@@ -18,22 +18,22 @@ func getTranslatedWord(
 		return engWord
 
 	// apple translations
-	} else if engWord == "apple" && language == "ko" {
-		return "사과"
-	} else if engWord == "apple" && language == "jp" {
-		return "林檎"
+	} else if engWord == "apple" && language == "es" {
+		return "manzana"
+	} else if engWord == "apple" && language == "fr" {
+		return "pomme"
 
 	// banana translations
-	} else if engWord == "banana" && language == "ko" {
-		return "바나나"
-	} else if engWord == "banana" && language == "jp" {
-		return "バナナ"
+	} else if engWord == "banana" && language == "es" {
+		return "plátano"
+	} else if engWord == "banana" && language == "fr" {
+		return "banane"
 
 	// grape translations
-	} else if engWord == "grape" && language == "ko" {
-		return "포도"
-	} else if engWord == "grape" && language == "jp" {
-		return "葡萄"
+	} else if engWord == "grape" && language == "es" {
+		return "uva"
+	} else if engWord == "grape" && language == "fr" {
+		return "raisin"
 
 	// If nothing matches
 	} else {
@@ -49,7 +49,7 @@ func main() {
 	fmt.Scanf("%s\n", &word)
 
 	// Ask the user which language they want to translate to
-	fmt.Print("Enter the target language (supported: ko, jp, en): ")
+	fmt.Print("Enter the target language (supported: es, fr, en): ")
 	fmt.Scanf("%s\n", &language)
 
 	// Get translated result
